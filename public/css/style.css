@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding-right: 0 20pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#logo{
+    color: black;
+    font-size: 20pt;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    /* letter-spacing: -3.5pt; */
+}
+#dot{
+    color: blue;
+}
+#nav-links{
+    display: flex;
+    align-content: space-around;
+    align-items: end;
+    gap: 70pt;
+    list-style: none;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#nav-links li a{
+    text-decoration: none;
+    color: black;
+
+}
+#section1{
+    display: flex;
+    justify-content: space-around;
+}
+#class{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30pt;
+}
+#aps{
+    font-size: 12pt;
+}
+#press{
+    font-size: 20pt;
+}
