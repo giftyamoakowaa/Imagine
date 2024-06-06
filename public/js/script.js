@@ -74,3 +74,40 @@ const tweet1 = {
   for(let i = 0; i <= 9; i++) {
     console.log('Notify friends!', i);
   }
+// functions
+// Defining functions
+function login(username,password) {
+  if (username == 'Gifty' && password == '1234') {
+    return 'user is logged in!';
+  } else if (username != 'Gifty') {
+    return 'invalid username!';
+  } else if (password != '1234') {
+    return 'Invalid password!'; 
+  } else {
+    return 'Invalid username or password!';
+  }
+
+}
+// Invoking functions
+login('Gifty', '1234');
+// Basic Arithmetic
+12 + 34;
+45 - 16;
+7 * 12;
+78 / 4;
+78 % 4;
+
+37 / 24;
+
+// Built-in Math functions
+Math.round(37 / 24);
+Math.floor(37 /24);
+Math.ceil(37 /24);
+Math.random();
+Math.max(78, 12, 98, 14, 89);
+
+// Order of operations
+1*2+3-4/2+2**2;
+// Handling user inputs
+1200+Number('250');
+
