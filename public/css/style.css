@@ -13,35 +13,58 @@ body{
 #dot{
     color: blue;
 }
-#nav-links{
-    display: flex;
-    align-content: space-around;
-    align-items: end;
-    gap: 70pt;
-    list-style: none;
+.nav-items{
+    text-decoration: none;
+    color: black;
 }
+
 
 #navbar{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-}
-#nav-links li a{
-    text-decoration: none;
-    color: black;
+    align-items: center;
+    width: 100%;
+    background-color: gold;
+    height: 70px;
 
 }
-#section1{
+#nav-links {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    gap: 35px;
+    padding: 0 30px 0 30px;
+    font-family: 'open sans', sans-serif;
+
+}
+#under{
     display: flex;
     justify-content: space-around;
 }
-#class{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+#middle{
+    font-family: "poppins", sans-serif;
     font-size: 30pt;
+    font-weight: bold;
+    color: black;
+    display: flex;
 }
-#aps{
+#font-one{
     font-size: 12pt;
+
 }
 #press{
     font-size: 20pt;
+    border-width: 2px;
+    background: pink;
+    border-top: orchid;
+    position: relative;
+    top: 0;
+    transition: 0.5s all ease;
+    box-shadow: 0 4px 20px -5px;
+    border-radius: 30px;
+    padding: 10px 30px;
+    text-decoration: none;
+    display: inline-block;
 }
