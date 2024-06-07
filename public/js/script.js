@@ -111,3 +111,25 @@ Math.max(78, 12, 98, 14, 89);
 // Handling user inputs
 1200+Number('250');
 
+// String Concatenation
+const firstname = 'Gifty ';
+const lastname = 'Amoakowaa ';
+firstname.trim() + ' ' + lastname.trim()
+
+// Template literal
+`${firstname.trim()} ${lastname.trim()}`;
+
+// String methods
+firstname.length;
+lastname.length;
+`${firstname.trim()} ${lastname.trim}`.length;
+(firstname.trim() + ' ' +lastname.trim()).length
+
+//  Upper Case
+firstname.toUpperCase();
+lastname.charAt(1);
+`${firstname.trim()} ${lastname.trim()}`.charAt(0);
+`${firstname.trim().charAt(0)} ${lastname.trim().charAt(0)}`
+
+// String cpnversion
+String(2014)
