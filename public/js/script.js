@@ -37,55 +37,92 @@ console.log(car.owner.driver.name);
 console.log(car);
 
 
+// write a function thst will take a user with firstname,lastname and return fullname;
+const user = {
+  firstname: 'Joe',
+  lastname: 'Ganner'
+}
+function fullname(user) {
+  return {
+    ...user,
+    fullname: `${user.firstname} ${user.lastname}`
+  }
+}
+fullname(user);
+
+// Array map
+const users = [
+  {firstname: 'Shania', lastname: 'Robertson'},
+  {firstname: 'Freya', lastname: 'Thompson'},
+  {firstname: 'stone', lastname: 'Simms'},
+  {firstname: 'Pearl', lastname: 'Ashley'},
+  {firstname: 'Kuks', lastname: 'Philix'}
+]
+users.map(fullname);
+
+// Map and return squares of numbers
+function square(number) {
+  return number **2;
+}
+const numbers = [0,1,2,3,4,5]
+numbers.map(square)
+
+// Filter and return even numbers
+function even(number) {
+  return number % 2===0
+}
+numbers.filter(even);
+
+
 // arrays
 const tweet1 = {
-    text: 'I am learning js todsy.',
-    likes: 5,
-    shares: 2,
-    retweets: 1
-  }
-  
-  const tweet2 = {
-    text: 'I am learning arrays todsy.',
-    likes: 8,
-    shares: 3,
-    retweets: 0
-  }
-  
-  const tweets = [];
-  tweets.push(tweet1);
-  tweets.push(tweet2);
-  tweets.length;
-  tweets;
-  
-  // Dates
-  const today = new Date();
-  today.toString();
-  today.toLocaleDateString();
-  today.getHours();
-  
-  // if/Else
-  if (today.getHours() >=16) {
-    console.log('class has ended!');
-  } else {
-    console.log('class is in session!');
-  }
-  // For loop
-  for(let i = 0; i <= 9; i++) {
-    console.log('Notify friends!', i);
-  }
+  text: 'I am learning js todsy.',
+  likes: 5,
+  shares: 2,
+  retweets: 1
+}
+
+const tweet2 = {
+  text: 'I am learning arrays todsy.',
+  likes: 8,
+  shares: 3,
+  retweets: 0
+}
+
+const tweets = [];
+tweets.push(tweet1);
+tweets.push(tweet2);
+tweets.length;
+tweets;
+
+// Dates
+const today = new Date();
+today.toString();
+today.toLocaleDateString();
+today.getHours();
+
+// if/Else
+if (today.getHours() >=16) {
+  console.log('class has ended!');
+} else {
+  console.log('class is in session!');
+}
+// For loop
+for(let i = 0; i <= 9; i++) {
+  console.log('Notify friends!', i);
+}
 // functions
 // Defining functions
 function login(username,password) {
-  if (username == 'Gifty' && password == '1234') {
-    return 'user is logged in!';
-  } else if (username != 'Gifty') {
-    return 'invalid username!';
-  } else if (password != '1234') {
-    return 'Invalid password!'; 
-  } else {
-    return 'Invalid username or password!';
-  }
+if (username == 'Gifty' && password == '1234') {
+  return 'user is logged in!';
+} else if (username != 'Gifty') {
+  return 'invalid username!';
+} else if (password != '1234') {
+  return 'Invalid password!'; 
+} else {
+  return 'Invalid username or password!';
+}
 
 }
 // Invoking functions
@@ -139,22 +176,22 @@ String(2014)
 const participants = []
 // Defining function
 function addParticipant(email) {
-  // check if email was provided
-  if (!email) {
-    return 'Email not provided!'
-  }
-  // check if email is valid
-  if (!email.includes ('@')){
-    return 'Invalid email provided!';
-  }
-  // Add email to the participants;
-  participants.push(email);
-  // Notify them via email;
-  // return response
-  return 'Participant added!';
+// check if email was provided
+if (!email) {
+  return 'Email not provided!'
+}
+// check if email is valid
+if (!email.includes ('@')){
+  return 'Invalid email provided!';
+}
+// Add email to the participants;
+participants.push(email);
+// Notify them via email;
+// return response
+return 'Participant added!';
 }
 
- addParticipant('maameamoakowaa1@gmail.com'); 
+addParticipant('maameamoakowaa1@gmail.com'); 
 
 // Arrays in Javascript
 const alphabets = ['A', 'B', 'C', 'D'];
@@ -162,39 +199,3 @@ alphabets;
 alphabets.join(' ')
 alphabets.join(' ').split(' ');
 
-
-// write a function thst will take a user with firstname,lastname and return fullname;
-const user = {
-  firstname: 'Joe',
-  lastname: 'Ganner'
-}
-function fullname(user) {
-  return {
-    ...user,
-    fullname: `${user.firstname} ${user.lastname}`
-  }
-}
-fullname(user);
-
-// Array map
-const users = [
-  {firstname: 'Shania', lastname: 'Robertson'},
-  {firstname: 'Freya', lastname: 'Thompson'},
-  {firstname: 'stone', lastname: 'Simms'},
-  {firstname: 'Pearl', lastname: 'Ashley'},
-  {firstname: 'Kuks', lastname: 'Philix'}
-]
-users.map(fullname);
-
-// Map and return squares of numbers
-function square(number) {
-  return number **2;
-}
-const numbers = [0,1,2,3,4,5]
-numbers.map(square)
-
-// Filter and return even numbers
-function even(number) {
-  return number % 2===0
-}
-numbers.filter(even);
