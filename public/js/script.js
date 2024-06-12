@@ -199,3 +199,39 @@ alphabets;
 alphabets.join(' ')
 alphabets.join(' ').split(' ');
 
+// write a function that takes a user with name and dateofBirth and returns true if their birthday is today else false
+const user = {
+  name: 'Martin King',
+  dateOfBirth: '1969-06-12',
+}
+function isBirthday(user) {
+  const today = new Date();
+  const birthDate = new Date(user.dateOfBirth);
+  if (today.getMonth()===birthDate.getMonth() && today.getDate()===birthDate.getDate())
+ {return true;
+} else {return false;
+       }
+}
+
+
+isBirthday(user);
+
+
+// Write a function that takes a user with name and dateOfBirth and returns birthday with their nameif their birthday is today else return not your day
+
+function birthdayMessage(user) {
+  const today = new Date();
+  const birthDate = new Date(user.dateOfBirth);
+
+  if (today.getDate() === birthDate.getDate() && today.getMonth() === birthDate.getMonth()) {
+    return `Happy Birthday, ${user.name}!`;
+  } else {
+    return 'Not your day';
+  }
+}
+
+
+console.log(birthdayMessage(user));
+
+// Objects in Javascript
+
