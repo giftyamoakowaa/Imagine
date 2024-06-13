@@ -200,10 +200,7 @@ alphabets.join(' ')
 alphabets.join(' ').split(' ');
 
 // write a function that takes a user with name and dateofBirth and returns true if their birthday is today else false
-const user = {
-  name: 'Martin King',
-  dateOfBirth: '1969-06-12',
-}
+// 
 function isBirthday(user) {
   const today = new Date();
   const birthDate = new Date(user.dateOfBirth);
@@ -234,4 +231,31 @@ function birthdayMessage(user) {
 console.log(birthdayMessage(user));
 
 // Objects in Javascript
+
+// Bottle class
+class Bottle {
+  constructor(color, shape, volume) {
+    this.color=color;
+    this.shape=shape;
+    this.volume=volume
+  }
+
+getInfo() 
+  {return `This is a ${this.color} ${this.shape} bottle with a capacity of ${this.volume}ml`;}
+}
+
+
+class Car {}
+
+const bottle1 = new Bottle('black', 'circle', 300);
+bottle1.getInfo();
+const bottle2 = new Bottle('yeloow', 'square', 100);
+bottle2.getInfo();
+
+bottle1 instanceof Car;
+
+// classes in Javascrip
+
+
+
 
